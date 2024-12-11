@@ -5,7 +5,7 @@ from diffusers import StableDiffusionGLIGENPipeline
 
 from PIL import Image
 
-pipe = StableDiffusionGLIGENPipeline.from_pretrained("gligen/diffusers-inpainting-text-box", revision="fp16", torch_dtype=torch.float16)
+pipe = StableDiffusionGLIGENPipeline.from_pretrained("masterful/gligen-1-4-inpainting-text-box", revision="fp16", torch_dtype=torch.float16)
 pipe.to("cuda")
 
 os.makedirs("images", exist_ok=True)
