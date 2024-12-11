@@ -1,11 +1,11 @@
 import os
 import torch
 import torchvision
-from diffusers import StableDiffusionGLIGENPipeline
 
 from PIL import Image
+from diffusers import DiffusionPipeline
 
-pipe = StableDiffusionGLIGENPipeline.from_pretrained("masterful/gligen-1-4-inpainting-text-box", revision="fp16", torch_dtype=torch.float16)
+pipe = DiffusionPipeline.from_pretrained("masterful/gligen-1-4-inpainting-text-box")
 pipe.to("cuda")
 
 os.makedirs("images", exist_ok=True)
