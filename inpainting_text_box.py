@@ -16,7 +16,7 @@ images = pipe(
     prompt,
     num_images_per_prompt=2,
     gligen_phrases = ['a dog', 'a birthday cake'],
-    gligen_inpaint_image=Image.open("resources/arg_corgis.jpeg").convert('RGB'),
+    gligen_inpaint_image=Image.open("/kaggle/working/Gligen-Demo/resources/arg_corgis.jpeg").convert('RGB'),
     gligen_boxes = [
         [0.1871, 0.3048, 0.4419, 0.5562],
         [0.2152, 0.6792, 0.7671, 0.9482]
